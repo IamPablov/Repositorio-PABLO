@@ -14,7 +14,8 @@
       <li><a href="index.html" class="nav-link px-2 link-primary">Home</a></li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown" aria-expanded="true">Cryptos</a>
-        <ul class="dropdown-menu show" data-bs-popper="static">
+        <ul class="dropdown-menu" data-bs-popper="static">
+          <!--VOlver a agregar el comando show en el ul dropdown menu (Lo quité pq cuando recargo me aparece desplegado)-->
           <li><a class="dropdown-item" href="#">Bitcoin</a></li>
           <li><a class="dropdown-item" href="#">Ethereum</a></li>
           <li><a class="dropdown-item" href="#">LiteCoin</a></li>
@@ -28,9 +29,44 @@
       </a>
     </div>
   </header>
-  
-  
-  
-  <script src="js/bootstrap.min.js"></script>
+  <main>
+  <div class="row flex-grow">
+      <div class="col-6" style="height: 45vh">
+        <!--Se agregó el comando style para darle mayor altura a los cuadros-->
+        <div class="h-100 p-5 text-bg-dark m-4">
+          <h1>Bitcoin</h1>
+          <div class="container" style="height: 25vh">
+            <p>cuadro 1</p>
+        </div>
+        </div>
+      </div>
+      <div class="col-6" style="height: 45vh">
+        <div class="h-100 p-5 text-bg-dark m-4">
+          <h2>Ethereum</h2>
+            <div class="container" style="height: 25vh">
+              <p>cuadro 2</p>
+          </div>
+      </div>
+    </div>
+  </div>
+  <section class="carousel-inner mt-5 mb-3">
+    <div class="col-12" style="height: 45vh">
+      <div class="h-100 p-5 text-bg-dark m-4">
+        <h3 style="text-align: center;">Últimas Cryptonoticias</h3>
+        <img src="images/noticia.jpeg" alt="Noticia" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <!--revisar tema de botones-->
+  </div>
+  </section>
+  </main>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
