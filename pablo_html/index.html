@@ -7,22 +7,21 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom" style="background-color: rgb(51, 51, 51);">
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom" style="background-color: #0B1033;">
     <div class="col-md-3 mb-2 mb-md-0">
     </div>
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
       <li><a href="index.html" class="nav-link px-2 link-primary">Home</a></li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown" aria-expanded="true">Cryptos</a>
-        <ul class="dropdown-menu" data-bs-popper="static">
-          <!--VOlver a agregar el comando show en el ul dropdown menu (Lo quité pq cuando recargo me aparece desplegado)-->
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="true">Cryptos</a>
+        <ul class="dropdown-menu show">
           <li><a class="dropdown-item" href="#">Bitcoin</a></li>
           <li><a class="dropdown-item" href="#">Ethereum</a></li>
           <li><a class="dropdown-item" href="#">LiteCoin</a></li>
           <li><a class="dropdown-item" href="#">USD - CLP</a></li>
           <!--Agregar en un futuro los links-->
         </ul>
-      </li>
+      </li>      
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -37,16 +36,16 @@
   <div class="row flex-grow">
       <div class="col-6" style="height: 45vh">
         <!--Se agregó el comando style para darle mayor altura a los cuadros-->
-        <div class="h-100 p-5 text-bg-dark m-4">
-          <h1>Crypto 1</h1>
+        <div class="h-100 p-5 m-4" style="background-color: #5B6081; color: white;">
+          <h1 style="text-align: center;">Crypto 1</h1>
           <div class="container" style="height: 25vh">
-            <p><a href="interior.html">Gráfico 1</a></p>
+            <p><a href="interior.html">Gráfico 1 (Página interior)</a></p>
         </div>
         </div>
       </div>
       <div class="col-6" style="height: 45vh">
-        <div class="h-100 p-5 text-bg-dark m-4">
-          <h2>Crypto 2</h2>
+        <div class="h-100 p-5 m-4" style="background-color: #5B6081; color: white;">
+          <h2 style="text-align: center;">Crypto 2</h2>
             <div class="container" style="height: 25vh">
               <p>Gráfico 2</p>
           </div>
@@ -55,9 +54,10 @@
   </div>
   <section class="carousel-inner mt-5 mb-3">
     <div class="col-12" style="height: 45vh">
-      <div class="h-100 p-5 text-bg-dark m-4">
+      <div class="h-100 p-5 m-4" style="background-color: #5B6081; color: white;">
         <h3 style="text-align: center;">Últimas Cryptonoticias</h3>
-        <img src="images/noticia.jpeg" alt="Noticia" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+        <img src="#" alt="Noticia" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+        <!--Agregar posteriormente las imagenes-->
       </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -72,18 +72,18 @@
   </section>
   <div class="row" style="height: 35vh; margin-bottom: 4rem;">
   <div class="col-3"></div>
-  <div class="col-6 h-100 p-5 text-bg-dark m-4">
-    <h4 style="text-align: center;">Calculadora de Cryptos</h4>
+  <div class="col-6 h-100 p-5 m-4" style="background-color: #5B6081; color: white;">
+    <h4 style="text-align: center;">Conversor de Cryptos</h4>
   </div>
   <div class="col-3"></div>
   </div>
   </main>
-  <footer class="py-3 my-4">
+  <footer class="py-3 my-4" style="background-color: #0B1033;">
     <!--Revisar cómo cambiar color de footer-->
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
     </ul>
-    <p class="text-center text-body-secondary">Consulta Crypto</p>
+    <p class="text-center text-white">Consulta Crypto</p>
   </footer>
 <script src="js/bootstrap.min.js"></script>
 </body>
