@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Consulta Crypto</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
   <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom" style="background-color: #0B1033;">
@@ -13,8 +14,8 @@
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
       <li><a href="index.html" class="nav-link px-2 link-primary">Home</a></li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="true">Cryptos</a>
-        <ul class="dropdown-menu show">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown">Cryptos</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
           <li><a class="dropdown-item" href="#">Bitcoin</a></li>
           <li><a class="dropdown-item" href="#">Ethereum</a></li>
           <li><a class="dropdown-item" href="#">LiteCoin</a></li>
@@ -40,6 +41,7 @@
           <h1 style="text-align: center;">Crypto 1</h1>
           <div class="container" style="height: 25vh">
             <p><a href="interior.html">Gráfico 1 (Página interior)</a></p>
+            <div></div>
         </div>
         </div>
       </div>
@@ -53,10 +55,10 @@
     </div>
   </div>
   <section class="carousel-inner mt-5 mb-3">
-    <div class="col-12" style="height: 45vh">
+    <div class="col-12" style="height: 50vh">
       <div class="h-100 p-5 m-4" style="background-color: #5B6081; color: white;">
         <h3 style="text-align: center;">Últimas Cryptonoticias</h3>
-        <img src="#" alt="Noticia" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+        <img src="images/noticia.jpeg" alt="Noticia" style="display: block; margin: 0 auto; max-width: 100%; height: 100%;">
         <!--Agregar posteriormente las imagenes-->
       </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -86,5 +88,6 @@
     <p class="text-center text-white">Consulta Crypto</p>
   </footer>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/dropdown.js"></script>
 </body>
 </html>
