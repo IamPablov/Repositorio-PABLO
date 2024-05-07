@@ -6,20 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interior</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body>
-  <header
-    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
     style="background-color: #0B1033;">
     <div class="col-md-3 mb-2 mb-md-0">
     </div>
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
       <li><a href="index.html" class="nav-link px-2 link-primary">Home</a></li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="true">Cryptos</a>
-        <ul class="dropdown-menu show">
-          <li><a class="dropdown-item" href="#">Bitcoin</a></li>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown">Cryptos</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="interior.html">Bitcoin</a></li>
           <li><a class="dropdown-item" href="#">Ethereum</a></li>
           <li><a class="dropdown-item" href="#">LiteCoin</a></li>
           <li><a class="dropdown-item" href="#">USD - CLP</a></li>
@@ -37,29 +36,16 @@
     </div>
   </header>
   <main>
-    <div class="container">
-      <div class="row">
-        <div class="col-5">
+    <div class="my-2">
+      <div class="p-2 text-center">
+        <div class="container py-2">
+          <h1 class="text-body-emphasis" style="margin-bottom: 2%;">Bitcoin</h1>
+          <img src="images/btc_graph.png" alt="Bitcoin" style="object-fit: cover; width: 80%;">
         </div>
-        <div class="col-2 p-2 m-4" style="background-color: #5B6081; color: white;">
-          <h1 style="text-align: center;">Crypto 1</h1>
-        </div>
-        <div class="col-5">
-        </div>
-        <section class="carousel-inner mb-3" style="margin: 0px 20px;">
-          <div class="col-12" style="height: 65vh; background-color: #5B6081; color: white;">
-            <div class="h-100 p-5 m-4">
-              <div class="row">
-                <div class="col-12">
-                  <h2 style="text-align: center;">Gráfico 1</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </div>
   </main>
+  
   <footer class="py-3 my-4" style="background-color: #0B1033;">
     <!--Revisar cómo cambiar color de footer-->
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -68,6 +54,7 @@
     <p class="text-center text-white">Consulta Crypto</p>
   </footer>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/dropdown.js"></script>
 </body>
 
 </html>

@@ -20,7 +20,7 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown">Cryptos</a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#">Bitcoin</a></li>
+          <li><a class="dropdown-item" href="interior.html">Bitcoin</a></li>
           <li><a class="dropdown-item" href="#">Ethereum</a></li>
           <li><a class="dropdown-item" href="#">LiteCoin</a></li>
           <li><a class="dropdown-item" href="#">USD - CLP</a></li>
@@ -40,20 +40,19 @@
   <main>
     <div class="row flex-grow">
       <div class="col-6" style="height: 45vh">
-        <!--Se agregó el comando style para darle mayor altura a los cuadros-->
         <div class="h-100 p-5 m-4" style="background-color: #5B6081; color: white;">
-          <h1 style="text-align: center;">Crypto 1</h1>
-          <div class="container" style="height: 25vh">
+          <h1 style="text-align: center;">Bitcoin</h1>
+          <div class="container" style="height: 25vh; display: flex; align-items: center; justify-content: center;">
             <p><a href="interior.html">Gráfico 1 (Página interior)</a></p>
-            <div></div>
+            <img src="images/btc_graph.png" alt="BTC" style="object-fit: cover; height: 100%;">
           </div>
         </div>
       </div>
       <div class="col-6" style="height: 45vh">
         <div class="h-100 p-5 m-4" style="background-color: #5B6081; color: white;">
-          <h2 style="text-align: center;">Crypto 2</h2>
-          <div class="container" style="height: 25vh">
-            <p>Gráfico 2</p>
+          <h2 style="text-align: center;">Ethereum</h2>
+          <div class="container" style="height: 25vh ; display: flex; align-items: center; justify-content: center;">
+            <img src="images/eth_graph.png" alt="BTC" style="object-fit: cover; height: 100%;">
           </div>
         </div>
       </div>
@@ -81,6 +80,31 @@
       <div class="col-3"></div>
       <div class="col-6 h-100 p-5 m-4" style="background-color: #5B6081; color: white;">
         <h4 style="text-align: center;">Conversor de Cryptos</h4>
+        <div class="row">
+          <div class="form-group col-6">
+            <label for="exampleFormControlSelect1">Divisa</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>USD</option>
+              <option>CLP</option>
+            </select>
+          </div>
+          <div class="form-group col-6">
+            <label for="exampleFormControlSelect1">Criptomoneda</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>BTC</option>
+              <option>ETH</option>
+            </select>
+          </div>
+        </div>
+        <div class="button-container" style="display: flex; justify-content: left; align-items: left; margin-top: 2%;">
+          <button type="button" class="btn btn-secondary">Convertir</button>
+          <form>
+            <div class="form-row" style="margin-left: 10%;">
+              <div class="col-12">
+                <input type="text" class="form-control" placeholder="Resultado">
+              </div>
+          </form>
+        </div>
       </div>
       <div class="col-3"></div>
     </div>
