@@ -44,7 +44,7 @@
           <h1 style="text-align: center;">Bitcoin</h1>
           <div class="container" style="height: 25vh; display: flex; align-items: center; justify-content: center;">
             <p><a href="interior.html">Gráfico 1 (Página interior)</a></p>
-            <img src="images/btc_graph.png" alt="BTC" style="object-fit: cover; height: 100%;">
+          <img src="images/btc_graph.png" alt="BTC" style="object-fit: cover; height: 100%;">
           </div>
         </div>
       </div>
@@ -82,14 +82,14 @@
         <h4 style="text-align: center;">Conversor de Cryptos</h4>
         <div class="row">
           <div class="form-group col-6">
-            <label for="exampleFormControlSelect1">Divisa</label>
+            <label for="exampleFormControlSelect1">De:</label>
             <select class="form-control" id="exampleFormControlSelect1">
               <option>USD</option>
               <option>CLP</option>
             </select>
           </div>
           <div class="form-group col-6">
-            <label for="exampleFormControlSelect1">Criptomoneda</label>
+            <label for="exampleFormControlSelect1">A:</label>
             <select class="form-control" id="exampleFormControlSelect1">
               <option>BTC</option>
               <option>ETH</option>
@@ -97,12 +97,16 @@
           </div>
         </div>
         <div class="button-container" style="display: flex; justify-content: left; align-items: left; margin-top: 2%;">
-          <button type="button" class="btn btn-secondary">Convertir</button>
-          <form>
-            <div class="form-row" style="margin-left: 10%;">
+            <div class="form-row">
               <div class="col-12">
+                <input type="text" class="form-control" placeholder="Cantidad">
+          <button type="button" class="btn btn-secondary mt-2">Convertir</button>
+          <form>
+            <div class="form-row">
+              <div class="col-12 mt-2">
                 <input type="text" class="form-control" placeholder="Resultado">
               </div>
+            </div>
           </form>
         </div>
       </div>
