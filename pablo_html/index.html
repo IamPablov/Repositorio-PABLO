@@ -4,25 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consulta Crypto</title>
+  <title>Chile en Cifras</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 
-<body>
+<body background="images/fondo.jpg">
   <header
     class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
     style="background-color: #0B1033;">
     <div class="col-md-3 mb-2 mb-md-0">
     </div>
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      <li><a href="index.html" class="nav-link px-2 link-primary">Home</a></li>
+      <li><a href="index.html" class="nav-link px-2 link-primary">Inicio</a></li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown">Cryptos</a>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown">Indicadores</a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="interior.html">Bitcoin</a></li>
-          <li><a class="dropdown-item" href="#">Ethereum</a></li>
-          <li><a class="dropdown-item" href="#">LiteCoin</a></li>
+          <li><a class="dropdown-item" href="interior.html">UF</a></li>
+          <li><a class="dropdown-item" href="#">IPC</a></li>
+          <li><a class="dropdown-item" href="#">IMACEC</a></li>
           <li><a class="dropdown-item" href="#">USD - CLP</a></li>
           <!--Agregar en un futuro los links-->
         </ul>
@@ -41,18 +41,56 @@
     <div class="row flex-grow">
       <div class="col-6" style="height: 45vh">
         <div class="h-100 p-5 m-4" style="background-color: #5B6081; color: white;">
-          <h1 style="text-align: center;">Bitcoin</h1>
+          <h1 style="text-align: center;">UF - Indicadores de reajustabilidad</h1>
           <div class="container" style="height: 25vh; display: flex; align-items: center; justify-content: center;">
-            <p><a href="interior.html">Gráfico 1 (Página interior)</a></p>
-            <img src="images/btc_graph.png" alt="BTC" style="object-fit: cover; height: 100%;">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">Serie</th>
+                  <th scope="col">Enero 2024</th>
+                  <th scope="col">Febrero 2024</th>
+                  <th scope="col">Marzo 2024</th>
+                  <th scope="col">Abril 2024</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Unidad de Fomento</td>
+                  <td>36.805,73</td>
+                  <td>36.750,98</td>
+                  <td>36.984,32</td>
+                  <td>37.187,51</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="container"><a href="interior.html"><button>a Gráfico</button></a></div>
           </div>
         </div>
       </div>
       <div class="col-6" style="height: 45vh">
         <div class="h-100 p-5 m-4" style="background-color: #5B6081; color: white;">
-          <h2 style="text-align: center;">Ethereum</h2>
+          <h2 style="text-align: center;">IPC</h2>
           <div class="container" style="height: 25vh ; display: flex; align-items: center; justify-content: center;">
-            <img src="images/eth_graph.png" alt="BTC" style="object-fit: cover; height: 100%;">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">Serie</th>
+                  <th scope="col">Enero 2024</th>
+                  <th scope="col">Febrero 2024</th>
+                  <th scope="col">Marzo 2024</th>
+                  <th scope="col">Abril 2024</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Índice de precios al consumidor</td>
+                  <td>36.805,73</td>
+                  <td>36.750,98</td>
+                  <td>36.984,32</td>
+                  <td>37.187,51</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -60,7 +98,7 @@
     <section class="carousel-inner mt-5 mb-3">
       <div class="col-12" style="height: 50vh">
         <div class="h-100 p-5 m-4" style="background-color: #5B6081; color: white;">
-          <h3 style="text-align: center;">Últimas Cryptonoticias</h3>
+          <h3 style="text-align: center;">Últimas Macronoticias</h3>
           <img src="images/noticia.jpeg" alt="Noticia"
             style="display: block; margin: 0 auto; max-width: 100%; height: 100%;">
           <!--Agregar posteriormente las imagenes-->
@@ -114,10 +152,13 @@
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
     </ul>
-    <p class="text-center text-white">Consulta Crypto</p>
+    <p class="text-center text-white">Chile en Cifras</p>
   </footer>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/dropdown.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
+    integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
